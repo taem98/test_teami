@@ -57,7 +57,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.   SessionMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -136,9 +136,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 #========================================================
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'portfolio', 'static'),
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'portfolio', 'static'),
+# ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
